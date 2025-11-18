@@ -1,4 +1,4 @@
-import { MenuItem, ProductVariant } from '@cowprotocol/ui'
+import { BadgeTypes, MenuItem, ProductVariant } from '@cowprotocol/ui'
 
 // import AppziButton from 'legacy/components/AppziButton'
 import { Version } from 'legacy/components/Version'
@@ -16,6 +16,18 @@ export const NAV_ITEMS: MenuItem[] = [
       {
         href: '/account/tokens',
         label: 'Tokens',
+      },
+    ],
+  },
+  {
+    label: 'More',  
+    badge: 'New',
+    badgeType: BadgeTypes.ALERT,
+    children: [
+      {
+        href: 'https://mevblocker.io/',
+        label: 'MEV Blocker',
+        external: true,
       },
     ],
   },
